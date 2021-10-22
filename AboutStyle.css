@@ -197,7 +197,7 @@ body {
 }
 
 .photo-about {
-  background: url("https://github.com/TheWriterSahb/ComicStandUp/img/SHREY.jpg") no-repeat center center;
+  background-image: url("https://github.com/TheWriterSahb/ComicStandUp/img/SHREY.jpg");
   background-size: cover;
   z-index: 45;
 }
