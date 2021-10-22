@@ -197,7 +197,7 @@ body {
 }
 
 .photo-about {
-  background: url("file:///C:/Users/91887/Desktop/SHREY.jpg") no-repeat center center;
+  background: url("img/SHREY.jpg") no-repeat center center;
   background-size: cover;
   z-index: 45;
 }
