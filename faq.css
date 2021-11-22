@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lobster+Two&family=Ubuntu+Condensed&display=swap");
+:root {
+  --font1:"Bona Nova";
+  --font2:"Ubuntu Condensed";
+  --font3:"Lobster Two";
+  font-size: 1.2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #eee;
+}
+
+.centerize {
+  display: grid;
+  justify-items: center;
+  min-height: calc(100vh - 128px);
+}
+
+.faq {
+  padding: 3rem;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: var(--font1);
+}
+
+details {
+  max-width: 28rem;
+}
+
+details > summary {
+  padding: 8px;
+  padding-left: 2.2rem;
+  border: none;
+  cursor: pointer;
+  list-style-position: inside;
+  border-bottom: 2px solid darkblue;
+  position: relative;
+  display: block;
+  transition: all 1s;
+  font-family: var(--font1);
+}
+
+details[open] > summary {
+  color: skyblue;
+  background-color: darkblue;
+  border-bottom: 2px solid skyblue;
+}
+
+details > p {
+  padding: 8px;
+  border-bottom: 2px solid skyblue;
+  line-height: 2rem;
+  font-family: var(--font2);
+}
+
+summary:before {
+  content: "";
+  border-width: 0.4rem;
+  border-style: solid;
+  border-color: transparent transparent transparent darkblue;
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: 0.2rem 50%;
+  transition: 0.25s transform ease;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+  border-color: transparent transparent transparent skyblue;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
